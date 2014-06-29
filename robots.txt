@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /cpanel
+Disallow: /cpanel/
+Disallow: /cpanel/*
+Disallow: /unprotected
+Disallow: /unprotected/
+Disallow: /unprotected/*
+Allow: /
