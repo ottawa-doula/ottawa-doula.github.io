@@ -111,7 +111,18 @@ body
     height: 100%; /* needed for page min-height */
     font-family: open_sans, verdana, helvetica, arial, sans-serif;
     font-size: 0.8em;
+    xbackground: url('../images/stock-illustration-17105519-baby-in-hand-white-background-long.png') repeat-y fixed 10px 270px;
+}
+
+/* hack for iPad otherwise the background scrolls with the content */
+#fixedbg
+{
     background: url('../images/stock-illustration-17105519-baby-in-hand-white-background-long.png') repeat-y fixed 10px 270px;
+    height:100%;
+    position:fixed;
+    width:100%;
+    xz-index:-1;
+    xtop:0;
 }
 
 #babyleftimage
@@ -506,9 +517,15 @@ td.firstcolumn {
 /* if there is no room for image on the left of the text, hide it and center the text */
 @media only screen and (max-width: 930px)
 {
+/*
     body
     {
         background-image: none;
+    }
+*/
+    #fixedbg
+    {
+        display: none;
     }
 
     #babyleftimage
