@@ -548,3 +548,12 @@ td.firstcolumn {
     }
 }
 
+/* make French subtitle fit on small screens */
+@media only screen and (max-width: 340px)
+{
+    #doulalactationcounselor
+    {
+        font-size: 1.7em;
+    }
+}
+
